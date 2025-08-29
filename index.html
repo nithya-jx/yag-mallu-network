@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAG - Your Access Gate | Behind Every Gate Lies A World Unknown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">YAG</span>
+                <span class="brand-subtitle">Your Access Gate</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#access" class="nav-link">Access</a></li>
+                <li><a href="#privacy" class="nav-link">Privacy & Safety</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="section section--home active">
+            <div class="hero">
+                <div class="hero-background">
+                    <div class="palm-silhouette palm-left"></div>
+                    <div class="palm-silhouette palm-right"></div>
+                    <div class="water-ripples"></div>
+                </div>
+                <div class="hero-content">
+                    <div class="hero-logo">
+                        <div class="logo-gate">
+                            <div class="gate-frame">
+                                <div class="gate-bars"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="hero-title">Behind Every Gate Lies A World Unknown</h1>
+                    <p class="hero-subtitle">Kerala's most trusted private network for meaningful LGBTQ+ connections</p>
+                    <button class="btn-primary hero-cta" id="request-access-btn">Request Access</button>
+                    <div class="hero-description">
+                        <p>In the heart of God's Own Country, where tradition meets transformation, YAG opens doors to a world few dare to imagine. This is not for everyone. This is for those who understand that true connections are built on trust, respect, and shared understanding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section section--about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Born in God's Own Country, Built for the World</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-story">
+                        <p class="story-text">Kerala has always been a land of secrets—hidden lagoons, whispered stories, connections that transcend the ordinary. YAG was born from this spirit, crafted for those who seek authentic relationships within the LGBTQ+ community.</p>
+                    </div>
+                    <div class="pillars-grid">
+                        <div class="pillar">
+                            <div class="pillar-icon">🔒</div>
+                            <h3 class="pillar-title">Absolute Privacy</h3>
+                            <p class="pillar-description">Your identity and conversations remain completely confidential.</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">✓</div>
+                            <h3 class="pillar-title">Verified Trust</h3>
+                            <p class="pillar-description">Every member is carefully vetted to ensure genuine connections.</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">👥</div>
+                            <h3 class="pillar-title">Meaningful Community</h3>
+                            <p class="pillar-description">Quality over quantity - connections that truly matter.</p>
+                        </div>
+                    </div>
+                    <div class="vision-statement">
+                        <blockquote>
+                            "To be the private circle where trust meets opportunity, where every connection is built on mutual respect and understanding."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACCESS SECTION -->
+        <section id="access" class="section section--access">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Only Those Who Request Access May Enter</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="access-content">
+                    <div class="access-description">
+                        <p>YAG is not a public space. It is an invitation-only network where privacy is paramount and connections are meaningful. Request access, and step into a world designed for those who value discretion and authenticity.</p>
+                    </div>
+                    <form class="access-form" id="access-form">
+                        <div class="form-group">
+                            <label for="full-name" class="form-label">Full Name</label>
+                            <input type="text" id="full-name" name="fullName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age" class="form-label">Age</label>
+                            <input type="number" id="age" name="age" class="form-input" min="18" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" id="location" name="location" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seeking" class="form-label">What are you seeking from YAG?</label>
+                            <select id="seeking" name="seeking" class="form-input" required>
+                                <option value="">Select your primary interest</option>
+                                <option value="networking">Professional Networking</option>
+                                <option value="friendship">Meaningful Friendships</option>
+                                <option value="dating">Dating & Relationships</option>
+                                <option value="community">Community & Support</option>
+                                <option value="mentorship">Mentorship</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Brief Personal Message</label>
+                            <textarea id="message" name="message" class="form-input" rows="4" placeholder="Tell us a bit about yourself and why you'd like to join YAG..." required></textarea>
+                        </div>
+                        <div class="privacy-assurance">
+                            <p>🔒 Your information remains completely confidential. We never share, sell, or expose member details.</p>
+                        </div>
+                        <button type="submit" class="btn-primary form-submit">Submit Access Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRIVACY & SAFETY SECTION -->
+        <section id="privacy" class="section section--privacy">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Your Safety Is Our Foundation</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="privacy-content">
+                    <div class="promises-grid">
+                        <div class="promise">
+                            <div class="promise-icon">🛡️</div>
+                            <p class="promise-text">No exposure. Your identity stays protected.</p>
+                        </div>
+                        <div class="promise">
+                            <div class="promise-icon">🚫</div>
+                            <p class="promise-text">No harassment. Zero tolerance policy enforced.</p>
+                        </div>
+                        <div class="promise">
+                            <div class="promise-icon">⚡</div>
+                            <p class="promise-text">No threats. Safe space guaranteed.</p>
+                        </div>
+                        <div class="promise">
+                            <div class="promise-icon">🤐</div>
+                            <p class="promise-text">Complete discretion. What happens in YAG, stays in YAG.</p>
+                        </div>
+                    </div>
+                    <div class="kerala-assurance">
+                        <div class="assurance-card">
+                            <h3>Understanding Kerala</h3>
+                            <p>We understand the unique challenges faced by our community in Kerala. Your trust is our highest priority. Every interaction is designed with your safety and privacy in mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section section--contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Secure Communication Only</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>Official Email</h3>
+                            <a href="mailto:access@yag-network.com" class="contact-email">access@yag-network.com</a>
+                        </div>
+                        <div class="contact-note">
+                            <p>For serious inquiries only. All communications are encrypted and confidential.</p>
+                            <p class="response-time">We respond to all genuine requests within 48 hours.</p>
+                        </div>
+                    </div>
+                    <div class="secure-messaging">
+                        <div class="security-badge">
+                            <span class="badge-icon">🔐</span>
+                            <span class="badge-text">End-to-End Encrypted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 YAG - Your Access Gate. All rights reserved.</p>
+                <p class="footer-tagline">Behind every gate lies a world unknown.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
